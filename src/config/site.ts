@@ -14,7 +14,7 @@ export const site = {
   // PLACEHOLDER – thay bằng email thật
   email: "ngothuylinh0106@gmail.com",
   // PLACEHOLDER – thay bằng địa chỉ thật (nếu có)
-  address: "Đang cập nhật",
+  address: "24 Đường Bến Lội, P.Bình Trị Đông A, Quận Bình Tân",
   workingHours: "Tiếp nhận yêu cầu: 7:30 – 20:00 hàng ngày",
   // PLACEHOLDER – chính sách bảo hành do quản trị viên cấu hình
   warranty: "Chính sách bảo hành dịch vụ được thông báo cụ thể khi báo giá.",

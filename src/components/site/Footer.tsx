@@ -8,8 +8,15 @@ export function Footer() {
     <footer className="mt-20 bg-navy text-navy-foreground">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:grid-cols-2 lg:grid-cols-4 lg:px-6">
         <div>
-          <p className="text-base font-extrabold uppercase tracking-tight">{site.name}</p>
-          <p className="mt-3 text-sm leading-relaxed text-navy-foreground/70">
+
+
+          <img
+                    src="/logo3.png"
+                    alt="Sửa chữa điện lạnh Bình Tân"
+                    className=" h-auto w-full shrink-0 object-cover"
+                  />
+
+          <p className=" text-sm leading-relaxed text-navy-foreground/70">
             Nhận sửa chữa, vệ sinh và bảo trì máy lạnh, tủ lạnh, máy giặt, máy nước nóng tận nơi.
             Kiểm tra rõ nguyên nhân và báo giá trước khi tiến hành.
           </p>

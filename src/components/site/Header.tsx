@@ -23,24 +23,20 @@ export function Header() {
         scrolled && "shadow-card",
       )}
     >
-      <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-3 lg:flex lg:justify-between lg:px-6">
+      <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-6 py-3 lg:flex lg:justify-between lg:px-6">
         
-        <Link to="/" className="flex min-w-0 items-center gap-2.5" onClick={() => setOpen(false)}>
-          
-          
-          <img
-                src="/logo3.png"
-                alt="Sửa chữa điện lạnh Bình Tân"
-                className="size-50 shrink-0 rounded-xl object-contain"
-              />
-
-
-          
-
-
-      
-
+        <Link
+                  to="/"
+                  className="flex min-w-0 items-center"
+                  onClick={() => setOpen(false)}
+                >
+                  <img
+                    src="/logo3.png"
+                    alt="Sửa chữa điện lạnh Bình Tân"
+                    className=" h-30 w-full shrink-0 object-contain"
+                  />
         </Link>
+
 
 
 
