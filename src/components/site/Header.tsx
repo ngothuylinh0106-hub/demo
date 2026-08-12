@@ -31,7 +31,7 @@ export function Header() {
           <img
                 src="/logo3.png"
                 alt="Sửa chữa điện lạnh Bình Tân"
-                className="size-10 shrink-0 rounded-xl object-contain"
+                className="size-50 shrink-0 rounded-xl object-contain"
               />
 
 
