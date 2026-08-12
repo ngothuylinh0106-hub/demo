@@ -24,17 +24,26 @@ export function Header() {
       )}
     >
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-3 lg:flex lg:justify-between lg:px-6">
+        
         <Link to="/" className="flex min-w-0 items-center gap-2.5" onClick={() => setOpen(false)}>
-          <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-primary text-primary-foreground font-bold">
-            ĐL
-          </span>
-          <span className="min-w-0 leading-tight">
-            <span className="block truncate text-sm font-extrabold uppercase tracking-tight text-navy sm:text-base">
-              Sửa chữa điện lạnh Việt Nam
-            </span>
-            <span className="hidden text-xs text-muted-foreground sm:block">{site.slogan}</span>
-          </span>
+          
+          
+          <img
+                src="/logo3.png"
+                alt="Sửa chữa điện lạnh Bình Tân"
+                className="size-10 shrink-0 rounded-xl object-contain"
+              />
+
+
+          
+
+
+      
+
         </Link>
+
+
+
 
         <nav className="hidden items-center gap-1 lg:flex">
           <NavLink to="/">Trang chủ</NavLink>

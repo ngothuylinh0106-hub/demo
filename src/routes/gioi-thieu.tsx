@@ -10,9 +10,9 @@ import { pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/gioi-thieu")({
   head: () =>
     pageHead({
-      title: "Giới thiệu | Sửa Chữa Điện Lạnh Việt Nam",
+      title: "Giới thiệu | Sửa Chữa Điện Lạnh Tại Bình Tân",
       description:
-        "Giới thiệu về dịch vụ Sửa Chữa Điện Lạnh Việt Nam: dịch vụ cung cấp, định hướng phục vụ, quy trình làm việc và cam kết với khách hàng.",
+        "Giới thiệu về dịch vụ Sửa Chữa Điện Lạnh Bình Tân: dịch vụ cung cấp, định hướng phục vụ, quy trình làm việc và cam kết với khách hàng.",
       path: "/gioi-thieu",
     }),
   component: AboutPage,

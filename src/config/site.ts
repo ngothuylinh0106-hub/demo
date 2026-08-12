@@ -3,16 +3,16 @@
  * Thay các giá trị PLACEHOLDER bằng thông tin thật trước khi triển khai.
  */
 export const site = {
-  name: "Sửa Chữa Điện Lạnh Việt Nam",
-  shortName: "Điện Lạnh Việt Nam",
+  name: "Sửa Chữa Điện Lạnh Tại Bình Tân",
+  shortName: "Điện Lạnh Bình Tân",
   slogan: "Có mặt nhanh – Sửa chữa tận nơi – Báo giá minh bạch",
   description:
     "Dịch vụ sửa chữa điện lạnh tận nơi: máy lạnh, tủ lạnh, máy giặt, máy nước nóng. Kiểm tra rõ nguyên nhân và báo giá trước khi sửa.",
   // PLACEHOLDER – thay bằng số điện thoại thật
-  phone: "0900 000 000",
-  phoneHref: "tel:0900000000",
+  phone: "0358 832 858",
+  phoneHref: "tel:0358 832 858",
   // PLACEHOLDER – thay bằng email thật
-  email: "lienhe@example.com",
+  email: "ngothuylinh0106@gmail.com",
   // PLACEHOLDER – thay bằng địa chỉ thật (nếu có)
   address: "Đang cập nhật",
   workingHours: "Tiếp nhận yêu cầu: 7:30 – 20:00 hàng ngày",
