@@ -5,14 +5,14 @@ export interface Area {
 }
 
 export const areas: Area[] = [
-  { slug: "tphcm", name: "TP. Hồ Chí Minh", note: "Hỗ trợ các quận nội thành và khu vực lân cận" },
-  { slug: "ha-noi", name: "Hà Nội", note: "Hỗ trợ nội thành và các quận ven" },
-  { slug: "da-nang", name: "Đà Nẵng", note: "Hỗ trợ trung tâm thành phố" },
-  { slug: "binh-duong", name: "Bình Dương", note: "Thuận An, Dĩ An, Thủ Dầu Một" },
-  { slug: "dong-nai", name: "Đồng Nai", note: "Biên Hòa và khu vực lân cận" },
-  { slug: "hai-phong", name: "Hải Phòng", note: "Khu vực nội thành" },
-  { slug: "can-tho", name: "Cần Thơ", note: "Ninh Kiều và vùng phụ cận" },
-  { slug: "ba-ria-vung-tau", name: "Bà Rịa – Vũng Tàu", note: "Vũng Tàu, Bà Rịa" },
-  { slug: "long-an", name: "Long An", note: "Bến Lức, Tân An, Đức Hòa" },
-  { slug: "bac-ninh", name: "Bắc Ninh", note: "TP. Bắc Ninh và khu công nghiệp" },
+  { slug: "Bình Trị Đông A", name: "TP. Hồ Chí Minh", note: "Bình Tân" },
+  { slug: "Bình Trị Đông B", name: "Hà Nội", note: "Bình Tân" },
+  { slug: "Tân Tạo A", name: "Đà Nẵng", note: "Bình Tân" },
+  { slug: "Tân Tạo B", name: "Bình Dương", note: "Bình Tân" },
+  { slug: "Bình Tân", name: "Đồng Nai", note: "Bình Tân" },
+  { slug: "Bình Hưng Hòa A", name: "Hải Phòng", note: "Bình Tân" },
+  { slug: "Bình Hưng Hòa B", name: "Bình Hưng Hòa B", note: "Bình Tân" },
+  { slug: "ba-ria-vung-tau", name: "Bà Rịa – Vũng Tàu", note: "Bình Tân" },
+  { slug: "long-an", name: "Long An", note: "Bình Tân" },
+  { slug: "bac-ninh", name: "Bắc Ninh", note: "Bình Tân" },
 ];
