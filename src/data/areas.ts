@@ -5,8 +5,8 @@ export interface Area {
 }
 
 export const areas: Area[] = [
-  { slug: "Bình Trị Đông A", name: "TP. Hồ Chí Minh", note: "Bình Tân" },
-  { slug: "Bình Trị Đông B", name: "Hà Nội", note: "Bình Tân" },
+  { slug: "Bình Trị Đông A", name: "Bình Trị Đông A", note: "Bình Tân" },
+  { slug: "Bình Trị Đông B", name: "Bình Trị Đông B", note: "Bình Tân" },
   { slug: "Tân Tạo A", name: "Đà Nẵng", note: "Bình Tân" },
   { slug: "Tân Tạo B", name: "Bình Dương", note: "Bình Tân" },
   { slug: "Bình Tân", name: "Đồng Nai", note: "Bình Tân" },
