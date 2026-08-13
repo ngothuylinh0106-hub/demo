@@ -33,13 +33,13 @@ function AboutPage() {
           <SectionHeading
             as="h1"
             eyebrow="Về chúng tôi"
-            title="Giới thiệu Sửa Chữa Điện Lạnh Việt Nam"
+            title="Giới thiệu Sửa Chữa Điện Lạnh Tại Bình Tân"
             description="Chúng tôi là đơn vị nhận sửa chữa, vệ sinh và bảo trì thiết bị điện lạnh tận nơi cho hộ gia đình, văn phòng và cửa hàng."
           />
         </div>
         <div className="mx-auto mt-10 max-w-3xl space-y-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
           <p>
-            Sửa Chữa Điện Lạnh Việt Nam hoạt động với mục tiêu giúp khách hàng xử lý nhanh các sự cố về
+            Sửa Chữa Điện Lạnh Bình Tân hoạt động với mục tiêu giúp khách hàng xử lý nhanh các sự cố về
             máy lạnh, tủ lạnh, máy giặt và máy nước nóng ngay tại nhà, hạn chế thời gian chờ đợi và
             tránh những khoản chi phí không rõ ràng.
           </p>
