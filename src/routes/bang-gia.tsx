@@ -7,7 +7,7 @@ import { pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/bang-gia")({
   head: () =>
     pageHead({
-      title: "Bảng giá dịch vụ sửa chữa điện lạnh | Điện Lạnh Việt Nam",
+      title: "Bảng giá dịch vụ sửa chữa điện lạnh | Điện Lạnh Tân Bình",
       description:
         "Bảng giá tham khảo dịch vụ kiểm tra, vệ sinh, sửa máy lạnh, tủ lạnh, máy giặt, máy nước nóng. Giá cụ thể được báo sau khi kiểm tra thực tế.",
       path: "/bang-gia",
