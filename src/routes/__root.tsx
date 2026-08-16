@@ -77,7 +77,13 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
-export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
+
+
+
+
+
+// dán đè
+  export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
@@ -88,18 +94,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:locale", content: "vi_VN" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      {name: "google-site-verification", content: "Z6iaulz2z0EcmaxKJQ0zp31R23_GSin5d8OCYIxYF50",}
+      { name: "google-site-verification", content: "Z6iaulz2z0EcmaxKJQ0zp31R23_GSin5d8OCYIxYF50" }
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      { rel: "preconnect", href: "https://googleapis.com" },
+      { rel: "preconnect", href: "https://gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap",
+        href: "https://googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap",
       },
       { rel: "icon", href: "/favicon-2.png", type: "image/x-icon" },
     ],
@@ -125,6 +131,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
