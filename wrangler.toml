@@ -1,0 +1,5 @@
+name = "ngothuylinh0106-hub-demo"
+compatibility_date = "2024-04-01"
+
+[vars]
+RESEND_API_KEY = "re_6FZF5FZA_K3LVtdAmAchaBErPUaWKxpgb"
