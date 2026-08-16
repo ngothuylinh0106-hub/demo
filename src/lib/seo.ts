@@ -1,5 +1,5 @@
 import { site } from "@/config/site";
-const BASE_URL = "https://dienlanhbihntan.com";
+const BASE_URL = "https://dienlanhbinhtan.com";
 
 export function pageHead({
   title,
