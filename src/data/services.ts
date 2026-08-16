@@ -30,8 +30,8 @@ export const services: ServiceDetail[] = [
   {
     slug: "sua-may-lanh",
     path: "/sua-may-lanh",
-    title: "Sửa máy lạnh tại nhà",
-    h1: "Sửa máy lạnh tại nhà – Kiểm tra và báo giá trước khi sửa",
+    title: "Sửa máy lạnh tại Bình Tân",
+    h1: "Sửa máy lạnh tại Bình Tân – Kiểm tra và báo giá trước khi sửa",
     short: "Xử lý máy lạnh không lạnh, chảy nước, kêu to, báo lỗi, không lên nguồn.",
     icon: "air",
     bullets: [
@@ -67,8 +67,8 @@ export const services: ServiceDetail[] = [
   {
     slug: "sua-tu-lanh",
     path: "/sua-tu-lanh",
-    title: "Sửa tủ lạnh tại nhà",
-    h1: "Sửa tủ lạnh tại nhà – Kiểm tra nhanh, xử lý đúng nguyên nhân",
+    title: "Sửa tủ lạnh tại Bình Tân",
+    h1: "Sửa tủ lạnh tại Bình Tân – Kiểm tra nhanh, xử lý đúng nguyên nhân",
     short: "Tủ lạnh không lạnh, không đông đá, chảy nước, kêu to, không hoạt động.",
     icon: "fridge",
     bullets: [
@@ -101,8 +101,8 @@ export const services: ServiceDetail[] = [
   {
     slug: "sua-may-giat",
     path: "/sua-may-giat",
-    title: "Sửa máy giặt tại nhà",
-    h1: "Sửa máy giặt tại nhà – Xử lý đúng lỗi, minh bạch chi phí",
+    title: "Sửa máy giặt tại Bình Tân",
+    h1: "Sửa máy giặt tại Bình Tân – Xử lý đúng lỗi, minh bạch chi phí",
     short: "Máy giặt không hoạt động, không vắt, không cấp nước, rung lắc, báo lỗi.",
     icon: "washer",
     bullets: [
