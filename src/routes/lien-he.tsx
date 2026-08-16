@@ -142,7 +142,7 @@ function ContactForm() {
       });
 
 
-      if (res?.success) {
+      if (res) {
         form.reset();
         toast.success("Đã gửi liên hệ", { 
           description: "Nhân viên sẽ phản hồi trong thời gian sớm nhất." 
