@@ -4,14 +4,14 @@ import { getService } from "@/data/services";
 import { pageHead, breadcrumbSchema, serviceSchema } from "@/lib/seo";
 import { faqSchema } from "@/components/site/FAQ";
 
-const service = getService("sua-may-giat")!;
+const service = getService("sua-may-giat-binh-tan")!;
 
-export const Route = createFileRoute("/sua-may-giat")({
+export const Route = createFileRoute("/sua-may-giat-binh-tan")({
   head: () => ({
     ...pageHead({
       title: "Sửa máy giặt tại nhà – Không vắt, không cấp nước | Điện Lạnh Bình tân",
       description: "Sửa máy giặt tại nhà: máy không hoạt động, không vắt, không cấp nước, rung lắc, báo lỗi. Báo giá trước khi sửa.",
-      path: "/sua-may-giat",
+      path: "/sua-may-giat-binh-tan",
     }),
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(serviceSchema(service.title, "Sửa máy giặt tại nhà: máy không hoạt động, không vắt, không cấp nước, rung lắc, báo lỗi. Báo giá trước khi sửa.")) },
@@ -21,7 +21,7 @@ export const Route = createFileRoute("/sua-may-giat")({
           breadcrumbSchema([
             { name: "Trang chủ", item: "/" },
             { name: "Dịch vụ", item: "/dich-vu" },
-            { name: service.title, item: "/sua-may-giat" },
+            { name: service.title, item: "/sua-may-giat-binh-tan" },
           ]),
         ),
       },

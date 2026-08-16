@@ -22,11 +22,11 @@ import { Route as GioiThieuRouteImport } from './routes/gioi-thieu'
 import { Route as KhuVucRouteImport } from './routes/khu-vuc'
 import { Route as LienHeRouteImport } from './routes/lien-he'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as SuaMayGiatRouteImport } from './routes/sua-may-giat'
-import { Route as SuaMayLanhRouteImport } from './routes/sua-may-lanh'
-import { Route as SuaMayNuocNongRouteImport } from './routes/sua-may-nuoc-nong'
-import { Route as SuaTuLanhRouteImport } from './routes/sua-tu-lanh'
-import { Route as VeSinhMayLanhRouteImport } from './routes/ve-sinh-may-lanh'
+import { Route as SuaMayGiatBinhTanRouteImport } from './routes/sua-may-giat-binh-tan'
+import { Route as SuaMayLanhBinhTanRouteImport } from './routes/sua-may-lanh-binh-tan'
+import { Route as SuaMayNuocNongBinhTanRouteImport } from './routes/sua-may-nuoc-nong-binh-tan'
+import { Route as SuaTuLanhBinhTanRouteImport } from './routes/sua-tu-lanh-binh-tan'
+import { Route as VeSinhMayLanhBinhTanRouteImport } from './routes/ve-sinh-may-lanh-binh-tan'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
@@ -95,29 +95,29 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SuaMayGiatRoute = SuaMayGiatRouteImport.update({
-  id: '/sua-may-giat',
-  path: '/sua-may-giat',
+const SuaMayGiatBinhTanRoute = SuaMayGiatBinhTanRouteImport.update({
+  id: '/sua-may-giat-binh-tan',
+  path: '/sua-may-giat-binh-tan',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SuaMayLanhRoute = SuaMayLanhRouteImport.update({
-  id: '/sua-may-lanh',
-  path: '/sua-may-lanh',
+const SuaMayLanhBinhTanRoute = SuaMayLanhBinhTanRouteImport.update({
+  id: '/sua-may-lanh-binh-tan',
+  path: '/sua-may-lanh-binh-tan',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SuaMayNuocNongRoute = SuaMayNuocNongRouteImport.update({
-  id: '/sua-may-nuoc-nong',
-  path: '/sua-may-nuoc-nong',
+const SuaMayNuocNongBinhTanRoute = SuaMayNuocNongBinhTanRouteImport.update({
+  id: '/sua-may-nuoc-nong-binh-tan',
+  path: '/sua-may-nuoc-nong-binh-tan',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SuaTuLanhRoute = SuaTuLanhRouteImport.update({
-  id: '/sua-tu-lanh',
-  path: '/sua-tu-lanh',
+const SuaTuLanhBinhTanRoute = SuaTuLanhBinhTanRouteImport.update({
+  id: '/sua-tu-lanh-binh-tan',
+  path: '/sua-tu-lanh-binh-tan',
   getParentRoute: () => rootRouteImport,
 } as any)
-const VeSinhMayLanhRoute = VeSinhMayLanhRouteImport.update({
-  id: '/ve-sinh-may-lanh',
-  path: '/ve-sinh-may-lanh',
+const VeSinhMayLanhBinhTanRoute = VeSinhMayLanhBinhTanRouteImport.update({
+  id: '/ve-sinh-may-lanh-binh-tan',
+  path: '/ve-sinh-may-lanh-binh-tan',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogIndexRoute = BlogIndexRouteImport.update({
@@ -145,11 +145,11 @@ export interface FileRoutesByFullPath {
   '/khu-vuc': typeof KhuVucRoute
   '/lien-he': typeof LienHeRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/sua-may-giat': typeof SuaMayGiatRoute
-  '/sua-may-lanh': typeof SuaMayLanhRoute
-  '/sua-may-nuoc-nong': typeof SuaMayNuocNongRoute
-  '/sua-tu-lanh': typeof SuaTuLanhRoute
-  '/ve-sinh-may-lanh': typeof VeSinhMayLanhRoute
+  '/sua-may-giat-binh-tan': typeof SuaMayGiatBinhTanRoute
+  '/sua-may-lanh-binh-tan': typeof SuaMayLanhBinhTanRoute
+  '/sua-may-nuoc-nong-binh-tan': typeof SuaMayNuocNongBinhTanRoute
+  '/sua-tu-lanh-binh-tan': typeof SuaTuLanhBinhTanRoute
+  '/ve-sinh-may-lanh-binh-tan': typeof VeSinhMayLanhBinhTanRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/': typeof BlogIndexRoute
 }
@@ -167,11 +167,11 @@ export interface FileRoutesByTo {
   '/khu-vuc': typeof KhuVucRoute
   '/lien-he': typeof LienHeRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/sua-may-giat': typeof SuaMayGiatRoute
-  '/sua-may-lanh': typeof SuaMayLanhRoute
-  '/sua-may-nuoc-nong': typeof SuaMayNuocNongRoute
-  '/sua-tu-lanh': typeof SuaTuLanhRoute
-  '/ve-sinh-may-lanh': typeof VeSinhMayLanhRoute
+  '/sua-may-giat-binh-tan': typeof SuaMayGiatBinhTanRoute
+  '/sua-may-lanh-binh-tan': typeof SuaMayLanhBinhTanRoute
+  '/sua-may-nuoc-nong-binh-tan': typeof SuaMayNuocNongBinhTanRoute
+  '/sua-tu-lanh-binh-tan': typeof SuaTuLanhBinhTanRoute
+  '/ve-sinh-may-lanh-binh-tan': typeof VeSinhMayLanhBinhTanRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog': typeof BlogIndexRoute
 }
@@ -190,11 +190,11 @@ export interface FileRoutesById {
   '/khu-vuc': typeof KhuVucRoute
   '/lien-he': typeof LienHeRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/sua-may-giat': typeof SuaMayGiatRoute
-  '/sua-may-lanh': typeof SuaMayLanhRoute
-  '/sua-may-nuoc-nong': typeof SuaMayNuocNongRoute
-  '/sua-tu-lanh': typeof SuaTuLanhRoute
-  '/ve-sinh-may-lanh': typeof VeSinhMayLanhRoute
+  '/sua-may-giat-binh-tan': typeof SuaMayGiatBinhTanRoute
+  '/sua-may-lanh-binh-tan': typeof SuaMayLanhBinhTanRoute
+  '/sua-may-nuoc-nong-binh-tan': typeof SuaMayNuocNongBinhTanRoute
+  '/sua-tu-lanh-binh-tan': typeof SuaTuLanhBinhTanRoute
+  '/ve-sinh-may-lanh-binh-tan': typeof VeSinhMayLanhBinhTanRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/': typeof BlogIndexRoute
 }
@@ -214,11 +214,11 @@ export interface FileRouteTypes {
     | '/khu-vuc'
     | '/lien-he'
     | '/sitemap.xml'
-    | '/sua-may-giat'
-    | '/sua-may-lanh'
-    | '/sua-may-nuoc-nong'
-    | '/sua-tu-lanh'
-    | '/ve-sinh-may-lanh'
+    | '/sua-may-giat-binh-tan'
+    | '/sua-may-lanh-binh-tan'
+    | '/sua-may-nuoc-nong-binh-tan'
+    | '/sua-tu-lanh-binh-tan'
+    | '/ve-sinh-may-lanh-binh-tan'
     | '/blog/$slug'
     | '/blog/'
   fileRoutesByTo: FileRoutesByTo
@@ -236,11 +236,11 @@ export interface FileRouteTypes {
     | '/khu-vuc'
     | '/lien-he'
     | '/sitemap.xml'
-    | '/sua-may-giat'
-    | '/sua-may-lanh'
-    | '/sua-may-nuoc-nong'
-    | '/sua-tu-lanh'
-    | '/ve-sinh-may-lanh'
+    | '/sua-may-giat-binh-tan'
+    | '/sua-may-lanh-binh-tan'
+    | '/sua-may-nuoc-nong-binh-tan'
+    | '/sua-tu-lanh-binh-tan'
+    | '/ve-sinh-may-lanh-binh-tan'
     | '/blog/$slug'
     | '/blog'
   id:
@@ -258,11 +258,11 @@ export interface FileRouteTypes {
     | '/khu-vuc'
     | '/lien-he'
     | '/sitemap.xml'
-    | '/sua-may-giat'
-    | '/sua-may-lanh'
-    | '/sua-may-nuoc-nong'
-    | '/sua-tu-lanh'
-    | '/ve-sinh-may-lanh'
+    | '/sua-may-giat-binh-tan'
+    | '/sua-may-lanh-binh-tan'
+    | '/sua-may-nuoc-nong-binh-tan'
+    | '/sua-tu-lanh-binh-tan'
+    | '/ve-sinh-may-lanh-binh-tan'
     | '/blog/$slug'
     | '/blog/'
   fileRoutesById: FileRoutesById
@@ -281,11 +281,11 @@ export interface RootRouteChildren {
   KhuVucRoute: typeof KhuVucRoute
   LienHeRoute: typeof LienHeRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
-  SuaMayGiatRoute: typeof SuaMayGiatRoute
-  SuaMayLanhRoute: typeof SuaMayLanhRoute
-  SuaMayNuocNongRoute: typeof SuaMayNuocNongRoute
-  SuaTuLanhRoute: typeof SuaTuLanhRoute
-  VeSinhMayLanhRoute: typeof VeSinhMayLanhRoute
+  SuaMayGiatBinhTanRoute: typeof SuaMayGiatBinhTanRoute
+  SuaMayLanhBinhTanRoute: typeof SuaMayLanhBinhTanRoute
+  SuaMayNuocNongBinhTanRoute: typeof SuaMayNuocNongBinhTanRoute
+  SuaTuLanhBinhTanRoute: typeof SuaTuLanhBinhTanRoute
+  VeSinhMayLanhBinhTanRoute: typeof VeSinhMayLanhBinhTanRoute
   BlogSlugRoute: typeof BlogSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
 }
@@ -383,39 +383,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/sua-may-giat': {
-      id: '/sua-may-giat'
-      path: '/sua-may-giat'
-      fullPath: '/sua-may-giat'
-      preLoaderRoute: typeof SuaMayGiatRouteImport
+    '/sua-may-giat-binh-tan': {
+      id: '/sua-may-giat-binh-tan'
+      path: '/sua-may-giat-binh-tan'
+      fullPath: '/sua-may-giat-binh-tan'
+      preLoaderRoute: typeof SuaMayGiatBinhTanRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/sua-may-lanh': {
-      id: '/sua-may-lanh'
-      path: '/sua-may-lanh'
-      fullPath: '/sua-may-lanh'
-      preLoaderRoute: typeof SuaMayLanhRouteImport
+    '/sua-may-lanh-binh-tan': {
+      id: '/sua-may-lanh-binh-tan'
+      path: '/sua-may-lanh-binh-tan'
+      fullPath: '/sua-may-lanh-binh-tan'
+      preLoaderRoute: typeof SuaMayLanhBinhTanRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/sua-may-nuoc-nong': {
-      id: '/sua-may-nuoc-nong'
-      path: '/sua-may-nuoc-nong'
-      fullPath: '/sua-may-nuoc-nong'
-      preLoaderRoute: typeof SuaMayNuocNongRouteImport
+    '/sua-may-nuoc-nong-binh-tan': {
+      id: '/sua-may-nuoc-nong-binh-tan'
+      path: '/sua-may-nuoc-nong-binh-tan'
+      fullPath: '/sua-may-nuoc-nong-binh-tan'
+      preLoaderRoute: typeof SuaMayNuocNongBinhTanRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/sua-tu-lanh': {
-      id: '/sua-tu-lanh'
-      path: '/sua-tu-lanh'
-      fullPath: '/sua-tu-lanh'
-      preLoaderRoute: typeof SuaTuLanhRouteImport
+    '/sua-tu-lanh-binh-tan': {
+      id: '/sua-tu-lanh-binh-tan'
+      path: '/sua-tu-lanh-binh-tan'
+      fullPath: '/sua-tu-lanh-binh-tan'
+      preLoaderRoute: typeof SuaTuLanhBinhTanRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/ve-sinh-may-lanh': {
-      id: '/ve-sinh-may-lanh'
-      path: '/ve-sinh-may-lanh'
-      fullPath: '/ve-sinh-may-lanh'
-      preLoaderRoute: typeof VeSinhMayLanhRouteImport
+    '/ve-sinh-may-lanh-binh-tan': {
+      id: '/ve-sinh-may-lanh-binh-tan'
+      path: '/ve-sinh-may-lanh-binh-tan'
+      fullPath: '/ve-sinh-may-lanh-binh-tan'
+      preLoaderRoute: typeof VeSinhMayLanhBinhTanRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog/': {
@@ -449,11 +449,11 @@ const rootRouteChildren: RootRouteChildren = {
   KhuVucRoute: KhuVucRoute,
   LienHeRoute: LienHeRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
-  SuaMayGiatRoute: SuaMayGiatRoute,
-  SuaMayLanhRoute: SuaMayLanhRoute,
-  SuaMayNuocNongRoute: SuaMayNuocNongRoute,
-  SuaTuLanhRoute: SuaTuLanhRoute,
-  VeSinhMayLanhRoute: VeSinhMayLanhRoute,
+  SuaMayGiatBinhTanRoute: SuaMayGiatBinhTanRoute,
+  SuaMayLanhBinhTanRoute: SuaMayLanhBinhTanRoute,
+  SuaMayNuocNongBinhTanRoute: SuaMayNuocNongBinhTanRoute,
+  SuaTuLanhBinhTanRoute: SuaTuLanhBinhTanRoute,
+  VeSinhMayLanhBinhTanRoute: VeSinhMayLanhBinhTanRoute,
   BlogSlugRoute: BlogSlugRoute,
   BlogIndexRoute: BlogIndexRoute,
 }

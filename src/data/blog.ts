@@ -62,7 +62,7 @@ export const posts: BlogPost[] = [
       { q: "Máy lạnh thiếu gas có tự hết không?", a: "Không. Gas trong hệ thống kín, nếu hao hụt nghĩa là có điểm xì và cần kiểm tra, xử lý rồi mới nạp lại." },
       { q: "Vệ sinh máy lạnh có giúp máy lạnh hơn không?", a: "Có, nếu nguyên nhân là do bụi bẩn bám dàn. Đây cũng là bước kiểm tra đầu tiên trước khi kết luận lỗi khác." },
     ],
-    related: ["may-lanh-chay-nuoc-phai-lam-sao", "bao-lau-nen-ve-sinh-may-lanh"],
+    related: ["may-lanh-chay-nuoc-phai-lam-sao", "bao-lau-nen-ve-sinh-may-lanh-binh-tan"],
   },
   {
     slug: "may-lanh-chay-nuoc-phai-lam-sao",
@@ -97,10 +97,10 @@ export const posts: BlogPost[] = [
       },
     ],
     faqs: [{ q: "Máy lạnh chảy nước có nguy hiểm không?", a: "Nước có thể chảy vào ổ điện hoặc thiết bị bên dưới nên cần tắt máy và xử lý sớm." }],
-    related: ["may-lanh-khong-lanh-nguyen-nhan-cach-xu-ly", "bao-lau-nen-ve-sinh-may-lanh"],
+    related: ["may-lanh-khong-lanh-nguyen-nhan-cach-xu-ly", "bao-lau-nen-ve-sinh-may-lanh-binh-tan"],
   },
   {
-    slug: "bao-lau-nen-ve-sinh-may-lanh",
+    slug: "bao-lau-nen-ve-sinh-may-lanh-binh-tan",
     title: "Bao lâu nên vệ sinh máy lạnh?",
     excerpt: "Tần suất vệ sinh hợp lý theo môi trường sử dụng để máy chạy bền và tiết kiệm điện.",
     date: "2026-02-02",
@@ -232,7 +232,7 @@ export const posts: BlogPost[] = [
       },
     ],
     faqs: [{ q: "Chế độ Dry có tiết kiệm điện hơn không?", a: "Trong ngày ẩm, chế độ Dry có thể giảm điện tiêu thụ, nhưng ngày nắng nóng khô thì Cool vẫn hiệu quả hơn." }],
-    related: ["bao-lau-nen-ve-sinh-may-lanh", "may-lanh-khong-lanh-nguyen-nhan-cach-xu-ly"],
+    related: ["bao-lau-nen-ve-sinh-may-lanh-binh-tan", "may-lanh-khong-lanh-nguyen-nhan-cach-xu-ly"],
   },
 ];
 

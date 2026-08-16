@@ -28,8 +28,8 @@ const commonBrands = [
 
 export const services: ServiceDetail[] = [
   {
-    slug: "sua-may-lanh",
-    path: "/sua-may-lanh",
+    slug: "sua-may-lanh-binh-tan",
+    path: "/sua-may-lanh-binh-tan",
     title: "Sửa máy lạnh tại Bình Tân",
     h1: "Sửa máy lạnh tại Bình Tân – Kiểm tra và báo giá trước khi sửa",
     short: "Xử lý máy lạnh không lạnh, chảy nước, kêu to, báo lỗi, không lên nguồn.",
@@ -65,8 +65,8 @@ export const services: ServiceDetail[] = [
     ],
   },
   {
-    slug: "sua-tu-lanh",
-    path: "/sua-tu-lanh",
+    slug: "sua-tu-lanh-binh-tan",
+    path: "/sua-tu-lanh-binh-tan",
     title: "Sửa tủ lạnh tại Bình Tân",
     h1: "Sửa tủ lạnh tại Bình Tân – Kiểm tra nhanh, xử lý đúng nguyên nhân",
     short: "Tủ lạnh không lạnh, không đông đá, chảy nước, kêu to, không hoạt động.",
@@ -99,8 +99,8 @@ export const services: ServiceDetail[] = [
     ],
   },
   {
-    slug: "sua-may-giat",
-    path: "/sua-may-giat",
+    slug: "sua-may-giat-binh-tan",
+    path: "/sua-may-giat-binh-tan",
     title: "Sửa máy giặt tại Bình Tân",
     h1: "Sửa máy giặt tại Bình Tân – Xử lý đúng lỗi, minh bạch chi phí",
     short: "Máy giặt không hoạt động, không vắt, không cấp nước, rung lắc, báo lỗi.",
@@ -133,8 +133,8 @@ export const services: ServiceDetail[] = [
     ],
   },
   {
-    slug: "sua-may-nuoc-nong",
-    path: "/sua-may-nuoc-nong",
+    slug: "sua-may-nuoc-nong-binh-tan",
+    path: "/sua-may-nuoc-nong-binh-tan",
     title: "Sửa máy nước nóng tại Bình Tân",
     h1: "Sửa máy nước nóng tại Bình Tân – An toàn điện, kiểm tra kỹ trước khi sửa",
     short: "Máy nước nóng không nóng, báo lỗi, rò rỉ nước, không vào điện.",
@@ -167,8 +167,8 @@ export const services: ServiceDetail[] = [
     ],
   },
   {
-    slug: "ve-sinh-may-lanh",
-    path: "/ve-sinh-may-lanh",
+    slug: "ve-sinh-may-lanh-binh-tan",
+    path: "/ve-sinh-may-lanh-binh-tan",
     title: "Vệ sinh máy lạnh tại Bình Tân",
     h1: "Vệ sinh máy lạnh tại Bình Tân– Làm sạch dàn lạnh, dàn nóng, kiểm tra tổng quát",
     short: "Vệ sinh máy lạnh treo tường, âm trần, máy công nghiệp và bảo dưỡng định kỳ.",
