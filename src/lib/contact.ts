@@ -14,10 +14,8 @@ export const sendContactEmail = createServerFn({
 })
   .validator(contactServerSchema)
   .handler(async ({ data }) => {
-    const apiKey = process.env['RESEND_API_KEY'];
-        if (!apiKey) {
-      throw new Error("RESEND_API_KEY chưa được cấu hình");
-    }
+    const apiKey = process.env['RESEND_API_KEY'] || (globalThis as any).process?.env?.RESEND_API_KEY || (globalThis as any).MINIFLARE_DATA?.env?.RESEND_API_KEY;
+
 
     const resend = new Resend(apiKey);
 
