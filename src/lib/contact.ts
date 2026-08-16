@@ -14,11 +14,17 @@ export const sendContactEmail = createServerFn({
 })
   .validator(contactServerSchema)
   .handler(async ({ data }) => {
-      const apiKey = 
+         // Lấy biến môi trường tương thích hoàn toàn với Cloudflare Workers / Vinxi SSR
+    const apiKey = 
       (globalThis as any).RESEND_API_KEY || 
-      (globalThis as any).process?.env?.RESEND_API_KEY || 
-      process.env['RESEND_API_KEY'] ||
-      (process.env as any).RESEND_API_KEY;
+      process.env['RESEND_API_KEY'] || 
+      (globalThis as any).process?.env?.RESEND_API_KEY ||
+      (import.meta as any).env?.RESEND_API_KEY;
+
+    if (!apiKey) {
+      console.error("LỖI RUNTIME SERVER: Không tìm thấy RESEND_API_KEY trên Cloudflare");
+      throw new Error("RESEND_API_KEY chưa được cấu hình");
+    }
 
 
     const resend = new Resend(apiKey);
