@@ -4,7 +4,7 @@ import { services } from "@/data/services";
 import { posts } from "@/data/blog";
 
 // TODO: replace with your project URL once a project name or custom domain is set.
-const BASE_URL = "https://dienlanhbihntan.com";
+const BASE_URL = "https://dienlanhbinhtan.com";
 
 interface SitemapEntry {
   path: string;
