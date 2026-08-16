@@ -88,6 +88,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:locale", content: "vi_VN" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      {name: "google-site-verification", content: "Z6iaulz2z0EcmaxKJQ0zp31R23_GSin5d8OCYIxYF50",}
     ],
     links: [
       {
@@ -100,7 +101,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap",
       },
-      { rel: "icon", href: "public/favicon-2.png", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon-2.png", type: "image/x-icon" },
     ],
     scripts: [
       {
