@@ -27,13 +27,13 @@ export function Header() {
         
         <Link
                   to="/"
-                  className="flex min-w-0 items-center"
+                  className="flex min-w-0 items-center h-14"
                   onClick={() => setOpen(false)}
                 >
                   <img
                     src="/logo3.png"
                     alt="Sửa chữa điện lạnh Bình Tân"
-                    className="h-24 w-full shrink-0 object-contain"
+                    className="mt-3 h-full w-auto max-w-[300px] shrink-0 object-contain scale-250 origin-left"
                   />
         </Link>
         <nav className="hidden items-center gap-1 lg:flex">
