@@ -135,8 +135,8 @@ export const services: ServiceDetail[] = [
   {
     slug: "sua-may-nuoc-nong",
     path: "/sua-may-nuoc-nong",
-    title: "Sửa máy nước nóng tại nhà",
-    h1: "Sửa máy nước nóng tại nhà – An toàn điện, kiểm tra kỹ trước khi sửa",
+    title: "Sửa máy nước nóng tại Bình Tân",
+    h1: "Sửa máy nước nóng tại Bình Tân – An toàn điện, kiểm tra kỹ trước khi sửa",
     short: "Máy nước nóng không nóng, báo lỗi, rò rỉ nước, không vào điện.",
     icon: "heater",
     bullets: [
@@ -169,8 +169,8 @@ export const services: ServiceDetail[] = [
   {
     slug: "ve-sinh-may-lanh",
     path: "/ve-sinh-may-lanh",
-    title: "Vệ sinh máy lạnh",
-    h1: "Vệ sinh máy lạnh – Làm sạch dàn lạnh, dàn nóng, kiểm tra tổng quát",
+    title: "Vệ sinh máy lạnh tại Bình Tân",
+    h1: "Vệ sinh máy lạnh tại Bình Tân– Làm sạch dàn lạnh, dàn nóng, kiểm tra tổng quát",
     short: "Vệ sinh máy lạnh treo tường, âm trần, máy công nghiệp và bảo dưỡng định kỳ.",
     icon: "clean",
     bullets: [
