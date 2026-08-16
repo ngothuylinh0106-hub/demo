@@ -54,7 +54,7 @@ function HomePage() {
               {site.slogan}
             </p>
             <h1 className="mt-5 text-3xl font-extrabold uppercase leading-[1.15] tracking-tight sm:text-4xl lg:text-5xl">
-              Sửa chữa điện lạnh tận nơi – Có mặt nhanh
+              Sửa chữa điện lạnh tại Bình Tân – Có mặt nhanh - Bảo hành trọn gói
             </h1>
             <p className="mt-5 max-w-xl text-sm leading-relaxed text-navy-foreground/80 sm:text-base">
               Nhận sửa chữa máy lạnh, tủ lạnh, máy giặt, máy nước nóng và các thiết bị điện lạnh tại Bình Tân hỗ trợ sửa tại nhà.
