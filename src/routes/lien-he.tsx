@@ -10,11 +10,12 @@ import { contactSchema } from "@/components/site/forms";
 import { areas } from "@/data/areas";
 import { site } from "@/config/site";
 import { pageHead } from "@/lib/seo";
+import { sendContactEmail } from "@/lib/contact";
 
 export const Route = createFileRoute("/lien-he")({
   head: () =>
     pageHead({
-      title: "Liên hệ & đặt lịch sửa chữa điện lạnh | Điện Lạnh Việt Nam",
+      title: "Liên hệ & đặt lịch sửa chữa điện lạnh | Điện Lạnh Bình Tân",
       description:
         "Liên hệ đặt lịch sửa chữa điện lạnh tận nơi. Gọi trực tiếp hoặc gửi form, nhân viên sẽ liên hệ lại xác nhận thời gian và thông tin thiết bị.",
       path: "/lien-he",
@@ -107,20 +108,54 @@ function InfoCard({
 
 function ContactForm() {
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    if (isSubmitting) return;
+
     const form = e.currentTarget;
-    const result = contactSchema.safeParse(Object.fromEntries(new FormData(form)));
+    const rawData = Object.fromEntries(new FormData(form));
+    const result = contactSchema.safeParse(rawData);
+    
     if (!result.success) {
       const next: Record<string, string> = {};
-      for (const issue of result.error.issues) next[String(issue.path[0])] = issue.message;
+      for (const issue of result.error.issues) {
+        next[String(issue.path[0])] = issue.message;
+      }
       setErrors(next);
       return;
     }
+    
     setErrors({});
-    form.reset();
-    toast.success("Đã gửi liên hệ", { description: "Nhân viên sẽ phản hồi trong thời gian sớm nhất." });
+    setIsSubmitting(true);
+
+    try {
+      // Gọi hàm kết nối Backend gửi email qua Resend
+            const res = await sendContactEmail({
+        data: {
+          name: result.data.name,
+          phone: result.data.phone,
+          email: result.data.email || "",
+          message: result.data.message,
+        }
+      });
+
+
+      if (res?.success) {
+        form.reset();
+        toast.success("Đã gửi liên hệ", { 
+          description: "Nhân viên sẽ phản hồi trong thời gian sớm nhất." 
+        });
+      } else {
+        toast.error("Gửi email thất bại", { description: "Vui lòng kiểm tra cấu hình Resend." });
+      }
+    } catch (error) {
+      console.error("Lỗi hệ thống:", error);
+      toast.error("Có lỗi xảy ra", { description: "Không thể kết nối đến máy chủ." });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -136,9 +171,10 @@ function ContactForm() {
       <div className="sm:col-span-2">
         <button
           type="submit"
-          className="w-full rounded-xl bg-primary px-6 py-3.5 text-sm font-bold text-primary-foreground transition-transform hover:scale-[1.01] sm:w-auto"
+          disabled={isSubmitting}
+          className="w-full rounded-xl bg-primary px-6 py-3.5 text-sm font-bold text-primary-foreground transition-transform hover:scale-[1.01] sm:w-auto disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          GỬI LIÊN HỆ
+          {isSubmitting ? "ĐANG GỬI..." : "GỬI LIÊN HỆ"}
         </button>
       </div>
     </form>
