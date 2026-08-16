@@ -36,11 +36,6 @@ export function Header() {
                     className="h-24 w-full shrink-0 object-contain"
                   />
         </Link>
-
-
-
-
-
         <nav className="hidden items-center gap-1 lg:flex">
           <NavLink to="/">Trang chủ</NavLink>
           <div className="group relative">

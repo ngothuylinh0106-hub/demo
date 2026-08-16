@@ -16,9 +16,9 @@ import { pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/")({
   head: () => ({
     ...pageHead({
-      title: "Sửa Chữa Điện Lạnh Việt Nam | Sửa máy lạnh, tủ lạnh, máy giặt tận nơi",
+      title: "Sửa Chữa Điện Lạnh Tại Bình Tân | Sửa máy lạnh, tủ lạnh, máy giặt tại nhà",
       description:
-        "Dịch vụ sửa điện lạnh tận nơi: sửa máy lạnh, tủ lạnh, máy giặt, máy nước nóng, vệ sinh và bảo trì. Kiểm tra rõ nguyên nhân, báo giá trước khi sửa.",
+        "Dịch vụ sửa điện lạnh tại Bình Tân: sửa máy lạnh, tủ lạnh, máy giặt, máy nước nóng, vệ sinh và bảo trì. Kiểm tra rõ nguyên nhân, báo giá trước khi sửa.",
       path: "/",
     }),
     scripts: [{ type: "application/ld+json", children: JSON.stringify(faqSchema(generalFaqs)) }],
@@ -57,7 +57,7 @@ function HomePage() {
               Sửa chữa điện lạnh tận nơi – Có mặt nhanh
             </h1>
             <p className="mt-5 max-w-xl text-sm leading-relaxed text-navy-foreground/80 sm:text-base">
-              Nhận sửa chữa máy lạnh, tủ lạnh, máy giặt, máy nước nóng và các thiết bị điện lạnh tại nhà.
+              Nhận sửa chữa máy lạnh, tủ lạnh, máy giặt, máy nước nóng và các thiết bị điện lạnh tại Bình Tân hỗ trợ sửa tại nhà.
               Kỹ thuật viên hỗ trợ nhanh, kiểm tra rõ nguyên nhân và báo giá trước khi sửa.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -90,7 +90,7 @@ function HomePage() {
         <div className="grid gap-10 rounded-3xl border border-border bg-card p-6 shadow-card sm:p-10 lg:grid-cols-[1fr_1.3fr]">
           <div>
             <h2 className="text-2xl font-extrabold uppercase tracking-tight text-navy sm:text-3xl">
-              Bạn đang gặp sự cố điện lạnh?
+              Bạn đang gặp sự cố về thiết bị điện lạnh trong nhà?
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               Để lại số điện thoại, chúng tôi sẽ liên hệ hỗ trợ.
