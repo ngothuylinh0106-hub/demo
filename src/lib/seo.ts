@@ -1,4 +1,5 @@
 import { site } from "@/config/site";
+const BASE_URL = "https://dienlanhbihntan.com";
 
 export function pageHead({
   title,
@@ -11,6 +12,8 @@ export function pageHead({
   path: string;
   type?: string;
 }) {
+  const canonicalUrl = `${BASE_URL}${path}`;
+
   return {
     meta: [
       { title },
@@ -18,11 +21,17 @@ export function pageHead({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: type },
-      { property: "og:url", content: path },
+      { property: "og:url", content: canonicalUrl },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
     ],
-    links: [{ rel: "canonical", href: path }],
+
+    links: [
+      {
+        rel: "canonical",
+        href: canonicalUrl,
+      },
+    ],
   };
 }
 
@@ -37,12 +46,19 @@ export const breadcrumbSchema = (items: { name: string; item: string }[]) => ({
   })),
 });
 
-export const serviceSchema = (name: string, description: string) => ({
+export const serviceSchema = (
+  name: string,
+  description: string
+) => ({
   "@context": "https://schema.org",
   "@type": "Service",
-  name,
-  description,
+  name: name,
+  description: description,
   serviceType: name,
   areaServed: "Việt Nam",
-  provider: { "@type": "LocalBusiness", name: site.name, telephone: site.phone },
+  provider: {
+    "@type": "LocalBusiness",
+    name: site.name,
+    telephone: site.phone,
+  },
 });
