@@ -33,7 +33,7 @@ export function Header() {
                   <img
                     src="/logo3.png"
                     alt="Sửa chữa điện lạnh Bình Tân"
-                    className="h-16 w-full shrink-0 object-contain"
+                    className="h-24 w-full shrink-0 object-contain"
                   />
         </Link>
 
