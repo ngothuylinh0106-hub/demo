@@ -14,7 +14,11 @@ export const sendContactEmail = createServerFn({
 })
   .validator(contactServerSchema)
   .handler(async ({ data }) => {
-    const apiKey = process.env['RESEND_API_KEY'] || (globalThis as any).process?.env?.RESEND_API_KEY || (globalThis as any).MINIFLARE_DATA?.env?.RESEND_API_KEY;
+    const apiKey = 
+  (globalThis as any).RESEND_API_KEY || 
+  process.env['RESEND_API_KEY'] || 
+  (globalThis as any).process?.env?.RESEND_API_KEY;
+
 
 
     const resend = new Resend(apiKey);
