@@ -30,7 +30,7 @@ export const sendContactEmail = createServerFn({
     const resend = new Resend(apiKey);
 
     const { data: emailData, error } = await resend.emails.send({
-      from: "Website Điện Lạnh Bình Tân <contact@://dienlanhbinhtan.com>",
+      from: "Website Điện Lạnh Bình Tân <contact@dienlanhbinhtan.com>",
       to: ["ngothuylinh0106@gmail.com"],
 
       subject: `Liên hệ mới từ ${data.name}`,
@@ -65,7 +65,7 @@ export const sendContactEmail = createServerFn({
           <hr />
 
           <p>
-            Email được gửi từ website dienlanhbihntan.com
+            Email được gửi từ website dienlanhbinhtan.com
           </p>
         </div>
       `,
