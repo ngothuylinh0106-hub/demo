@@ -6,8 +6,8 @@ import { pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/chinh-sach-bao-hanh")({
   head: () =>
     pageHead({
-      title: "Chính sách bảo hành | Sửa Chữa Điện Lạnh Việt Nam",
-      description: "Chính sách bảo hành dịch vụ sửa chữa điện lạnh: phạm vi áp dụng, điều kiện và cách yêu cầu bảo hành.",
+      title: "Chính sách bảo hành của điện lạnh bình tân| Sửa Chữa Điện Lạnh Bình Tân",
+      description: "Chính sách bảo hành dịch vụ sửa chữa điện lạnh bình tân: phạm vi áp dụng, điều kiện và cách yêu cầu bảo hành.",
       path: "/chinh-sach-bao-hanh",
     }),
   component: PolicyPage,
@@ -17,7 +17,7 @@ const sections = [
   {
     "heading": "Phạm vi bảo hành",
     "paragraphs": [
-      "Bảo hành áp dụng cho hạng mục đã được sửa chữa và linh kiện do chúng tôi cung cấp. Thời hạn cụ thể được thông báo khi báo giá và ghi nhận trong phiếu dịch vụ."
+      "Bảo hành áp dụng cho hạng mục đã được sửa chữa và linh kiện do điện lạnh bình tân cung cấp. Thời hạn cụ thể được thông báo khi báo giá và ghi nhận trong phiếu dịch vụ."
     ]
   },
   {

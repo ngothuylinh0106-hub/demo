@@ -9,7 +9,7 @@ import { pageHead, breadcrumbSchema } from "@/lib/seo";
 export const Route = createFileRoute("/dich-vu")({
   head: () => ({
     ...pageHead({
-      title: "Dịch vụ sửa chữa điện lạnh tận nơi | Điện Lạnh Việt Nam",
+      title: "Dịch vụ sửa chữa điện lạnh tại nhà | Điện Lạnh Bình Tân",
       description:
         "Danh sách dịch vụ: sửa máy lạnh, sửa tủ lạnh, sửa máy giặt, sửa máy nước nóng, vệ sinh máy lạnh và bảo trì điện lạnh định kỳ.",
       path: "/dich-vu",

@@ -6,7 +6,7 @@ import { pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/chinh-sach-dich-vu")({
   head: () =>
     pageHead({
-      title: "Chính sách dịch vụ | Sửa Chữa Điện Lạnh Việt Nam",
+      title: "Chính sách dịch vụ | Sửa Chữa Điện Lạnh Bình Tân",
       description: "Chính sách dịch vụ: quy trình tiếp nhận, báo giá, thanh toán và hỗ trợ sau sửa chữa.",
       path: "/chinh-sach-dich-vu",
     }),

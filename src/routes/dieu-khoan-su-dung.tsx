@@ -6,8 +6,8 @@ import { pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/dieu-khoan-su-dung")({
   head: () =>
     pageHead({
-      title: "Điều khoản sử dụng | Sửa Chữa Điện Lạnh Việt Nam",
-      description: "Điều khoản sử dụng website Sửa Chữa Điện Lạnh Việt Nam.",
+      title: "Điều khoản sử dụng | Sửa Chữa Điện Lạnh Bình Tân",
+      description: "Điều khoản sử dụng website Sửa Chữa Điện Lạnh Bình tân.",
       path: "/dieu-khoan-su-dung",
     }),
   component: PolicyPage,

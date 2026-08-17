@@ -41,6 +41,7 @@ export const services: ServiceDetail[] = [
       "Máy lạnh báo lỗi",
       "Máy lạnh kêu to",
       "Vệ sinh và bảo dưỡng máy lạnh",
+      "Thu mua máy lạnh cũ đã hư hỏng hoặc không thể khắc phục",
     ],
     intro:
       "Máy lạnh là thiết bị hoạt động liên tục trong điều kiện thời tiết nóng ẩm nên rất dễ phát sinh lỗi sau một thời gian sử dụng. Kỹ thuật viên sẽ kiểm tra trực tiếp tại nhà, xác định nguyên nhân, giải thích cho khách hàng và chỉ tiến hành sửa sau khi bạn đồng ý mức chi phí.",
@@ -50,6 +51,7 @@ export const services: ServiceDetail[] = [
       { problem: "Máy lạnh không lên nguồn", cause: "Hỏng board mạch, lỗi nguồn cấp, hư remote hoặc mắt nhận tín hiệu." },
       { problem: "Máy lạnh báo lỗi trên dàn lạnh", cause: "Lỗi cảm biến, lỗi giao tiếp giữa dàn nóng và dàn lạnh, lỗi inverter." },
       { problem: "Máy lạnh kêu to, rung lắc", cause: "Quạt lệch bạc, dị vật trong lồng sóc, khung treo lỏng, block xuống cấp." },
+      
     ],
     brands: commonBrands,
     pricing: [

@@ -6,7 +6,7 @@ import { pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/chinh-sach-bao-mat")({
   head: () =>
     pageHead({
-      title: "Chính sách bảo mật | Sửa Chữa Điện Lạnh Việt Nam",
+      title: "Chính sách bảo mật | Sửa Chữa Điện Lạnh Bình Tân",
       description: "Chính sách bảo mật thông tin khách hàng khi sử dụng website và dịch vụ sửa chữa điện lạnh.",
       path: "/chinh-sach-bao-mat",
     }),
