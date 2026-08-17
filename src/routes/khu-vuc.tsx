@@ -9,9 +9,9 @@ import { pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/khu-vuc")({
   head: () =>
     pageHead({
-      title: "Khu vực sửa chữa điện lạnh | Điện Lạnh Việt Nam",
+      title: "Khu vực sửa chữa điện lạnh | Điện Lạnh Bình Tân",
       description:
-        "Danh sách tỉnh/thành đang được hỗ trợ sửa điện lạnh tận nơi: TP. Hồ Chí Minh, Hà Nội, Đà Nẵng, Bình Dương, Đồng Nai và nhiều khu vực khác.",
+        "Danh sách tỉnh/thành đang được hỗ trợ sửa điện lạnh tận nơi: TP. Hồ Chí Minh,và Bình Tân.",
       path: "/khu-vuc",
     }),
   component: AreasPage,

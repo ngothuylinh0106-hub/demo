@@ -9,7 +9,7 @@ const service = getService("sua-may-giat-binh-tan")!;
 export const Route = createFileRoute("/sua-may-giat-binh-tan")({
   head: () => ({
     ...pageHead({
-      title: "Sửa máy giặt tại nhà – Không vắt, không cấp nước | Điện Lạnh Bình tân",
+      title: "Sửa máy giặt tại Bình Tân – Không vắt, không cấp nước | Điện Lạnh Bình tân",
       description: "Sửa máy giặt tại nhà: máy không hoạt động, không vắt, không cấp nước, rung lắc, báo lỗi. Báo giá trước khi sửa.",
       path: "/sua-may-giat-binh-tan",
     }),

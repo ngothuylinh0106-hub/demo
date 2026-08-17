@@ -10,11 +10,11 @@ export const Route = createFileRoute("/sua-may-nuoc-nong-binh-tan")({
   head: () => ({
     ...pageHead({
       title: "Sửa máy nước nóng tại Bình Tân – An toàn, nhanh chóng | Điện Lạnh Bình Tân",
-      description: "Sửa máy nước nóng: không nóng, rò rỉ nước, không vào điện, báo lỗi. Kiểm tra an toàn điện trước khi xử lý.",
+      description: "Sửa máy nước nóng tại bình tân: không nóng, rò rỉ nước, không vào điện, báo lỗi. Kiểm tra an toàn điện trước khi xử lý.",
       path: "/sua-may-nuoc-nong-binh-tan",
     }),
     scripts: [
-      { type: "application/ld+json", children: JSON.stringify(serviceSchema(service.title, "Sửa máy nước nóng: không nóng, rò rỉ nước, không vào điện, báo lỗi. Kiểm tra an toàn điện trước khi xử lý.")) },
+      { type: "application/ld+json", children: JSON.stringify(serviceSchema(service.title, "Sửa máy nước nóng tại bình tân: không nóng, rò rỉ nước, không vào điện, báo lỗi. Kiểm tra an toàn điện trước khi xử lý.")) },
       {
         type: "application/ld+json",
         children: JSON.stringify(

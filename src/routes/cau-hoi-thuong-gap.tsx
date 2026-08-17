@@ -11,7 +11,7 @@ const allFaqs = [...generalFaqs, ...services.flatMap((s) => s.faqs)];
 export const Route = createFileRoute("/cau-hoi-thuong-gap")({
   head: () => ({
     ...pageHead({
-      title: "Câu hỏi thường gặp về sửa chữa điện lạnh | Điện Lạnh Việt Nam",
+      title: "Câu hỏi thường gặp về sửa chữa thiết bị điện lạnh tại bình tân | Điện Lạnh Bình Tân",
       description:
         "Giải đáp các thắc mắc thường gặp về sửa máy lạnh, tủ lạnh, máy giặt, máy nước nóng, báo giá, đặt lịch và bảo hành dịch vụ.",
       path: "/cau-hoi-thuong-gap",

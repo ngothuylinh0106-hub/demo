@@ -14,7 +14,7 @@ export const Route = createFileRoute("/sua-may-lanh-binh-tan")({
       path: "/sua-may-lanh-binh-tan",
     }),
     scripts: [
-      { type: "application/ld+json", children: JSON.stringify(serviceSchema(service.title, "Dịch vụ sửa máy lạnh tại nhà: máy lạnh không lạnh, chảy nước, kêu to, báo lỗi. Kiểm tra rõ nguyên nhân và báo giá trước khi sửa.")) },
+      { type: "application/ld+json", children: JSON.stringify(serviceSchema(service.title, "Dịch vụ sửa máy lạnh tại bình tân: máy lạnh không lạnh, chảy nước, kêu to, báo lỗi. Kiểm tra rõ nguyên nhân và báo giá trước khi sửa.")) },
       {
         type: "application/ld+json",
         children: JSON.stringify(

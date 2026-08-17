@@ -8,7 +8,7 @@ import { pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/blog/")({
   head: () =>
     pageHead({
-      title: "Kiến thức điện lạnh | Blog Sửa Chữa Điện Lạnh Việt Nam",
+      title: "Kiến thức điện lạnh | Blog Sửa Chữa Điện Lạnh Bình Tân",
       description:
         "Bài viết hướng dẫn xử lý sự cố máy lạnh, tủ lạnh, máy giặt, máy nước nóng và mẹo sử dụng thiết bị điện lạnh bền, tiết kiệm điện.",
       path: "/blog",
