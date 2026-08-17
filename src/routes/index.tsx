@@ -53,7 +53,7 @@ function HomePage() {
             <p className="inline-flex rounded-full bg-navy-foreground/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide">
               {site.slogan}
             </p>
-            <h1 className="mt-5 text-3xl font-extrabold uppercase leading-[1.15] tracking-tight sm:text-4xl lg:text-5xl">
+            <h1 className="mt-5 text-2xl font-extrabold uppercase leading-[1.15] tracking-tight sm:text-3xl lg:text-4xl">
               Sửa chữa điện lạnh tại Bình Tân – Có mặt nhanh - Bảo hành trọn gói
             </h1>
             <p className="mt-5 max-w-xl text-sm leading-relaxed text-navy-foreground/80 sm:text-base">
