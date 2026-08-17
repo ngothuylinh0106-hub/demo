@@ -23,7 +23,7 @@ export const sendContactEmail = createServerFn({
 
     if (!apiKey) {
       console.error("LỖI RUNTIME SERVER: Không tìm thấy RESEND_API_KEY trên Cloudflare");
-      throw new Error("RESEND_API_KEY chưa được cấu hình");
+      throw new Error("RESEND_API_KEY");
     }
 
 
