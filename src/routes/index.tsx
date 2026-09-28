@@ -12,6 +12,8 @@ import { ProcessSteps } from "@/components/site/ProcessSteps";
 import { FAQList, faqSchema } from "@/components/site/FAQ";
 import { CallbackForm } from "@/components/site/CallbackForm";
 import { pageHead } from "@/lib/seo";
+import Slider from "@/components/site/Slider";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -84,7 +86,7 @@ function HomePage() {
           </div>
         </div>
       </section>
-
+        <Slider/>
       {/* Quick CTA */}
       <Section id="yeu-cau-goi-lai" muted>
         <div className="grid gap-10 rounded-3xl border border-border bg-card p-6 shadow-card sm:p-10 lg:grid-cols-[1fr_1.3fr]">
