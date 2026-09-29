@@ -1,3 +1,5 @@
+import { Youtube } from "lucide-react";
+
 /**
  * Toàn bộ thông tin doanh nghiệp nằm ở đây.
  * Thay các giá trị PLACEHOLDER bằng thông tin thật trước khi triển khai.
@@ -18,8 +20,11 @@ export const site = {
   workingHours: "Tiếp nhận yêu cầu: 7:30 – 20:00 hàng ngày",
   // PLACEHOLDER – chính sách bảo hành do quản trị viên cấu hình
   warranty: "Chính sách bảo hành dịch vụ được thông báo cụ thể khi báo giá.",
-  zalo: "",
-  facebook: "",
+  zalo: "0388196134",
+  facebook: "https://www.facebook.com/profile.php?id=61593743844398&locale=vi_VN",
+  youtube:"https://www.youtube.com/@LinhNgo-ik7ys",
+  tiktok:"",
+  viber:"",
 } as const;
 
 export const mainNav = [
