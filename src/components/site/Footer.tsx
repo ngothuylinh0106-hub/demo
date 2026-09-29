@@ -212,7 +212,7 @@ export function Footer() {
       {/* Copyright */}
       <div className="border-t border-navy-foreground/10">
         <p className="mx-auto max-w-7xl px-4 py-5 text-center text-xs text-navy-foreground/60 lg:px-6">
-          © 2026 Sửa Chữa Điện Lạnh Việt Nam. All rights reserved.
+          © 2026 Sửa Chữa Điện Lạnh Bình Tân. All rights reserved.
         </p>
       </div>
 
