@@ -51,19 +51,18 @@ function ContactPage() {
             <InfoCard icon={Clock} label="Giờ tiếp nhận yêu cầu">
               <p className="text-sm text-muted-foreground">{site.workingHours}</p>
             </InfoCard>
-            <div className="overflow-hidden rounded-2xl border border-border bg-surface">
-              <div className="grid h-56 place-items-center px-6 text-center">
-                <div>
-                  <MapPin className="mx-auto size-8 text-primary" />
-                  <p className="mt-3 text-sm font-semibold text-navy">Bản đồ (Google Maps)</p>
-                  <p className="mt-1 text-xs text-muted-foreground">
-                    Placeholder – gắn mã nhúng Google Maps khi có địa chỉ chính thức.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
 
+            <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-card">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d155630.22115033798!2d106.57019285251077!3d10.785710187335955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x31752d83280431af%3A0x478eeafa19dae1c!2zxJBp4buHniBs4bqFuaCBiw6xuaCB0w6JukLkgMjQgQuG6v24gTOG7mWksIELDrG5oIFTDom4sIEjhu5MgQ2jDrSBNaWnoIDEwMDAwMCwgVmnhu4d0IE5hbQ!3m2!1d10.772558!2d106.5866787!4m5!1s0x31752d83280431af%3A0x478eeafa19dae1c!2zxJBp4buHniBs4bqFuaCBiw6xuaCB0w6JukLkgMjQgQuG6v24gTOG7mWksIELDrG5oIFTDom4sIEjhu5MgQ2jDrSBNaWnoIDEwMDAwMCwgVmnhu4d0IE5hbQ!3m2!1d10.772558!2d106.5866787!5e1!3m2!1svi!2s!4v1790653623546!5m2!1svi!2s"
+              className="h-[300px] w-full border-0 sm:h-[350px]"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              title="Bản đồ Điện Lạnh Bình Tân"
+            />
+          </div>
+          </div>
           <div className="rounded-3xl border border-border bg-card p-6 shadow-card sm:p-8">
             <h2 className="text-xl font-extrabold uppercase tracking-tight text-navy">Gửi liên hệ</h2>
             <p className="mt-2 text-sm text-muted-foreground">Chúng tôi phản hồi trong giờ tiếp nhận yêu cầu.</p>
